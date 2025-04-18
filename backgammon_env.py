@@ -73,7 +73,6 @@ class BackgammonEnv:
                     can_bear_off = False
                     break
         
-        # Le reste de votre code pour les mouvements standards...
         for point in range(24):
             src = point + 1
             if self.current_player == 0 and self.board[point, 0] > 0:
@@ -116,8 +115,6 @@ class BackgammonEnv:
                                     break
                             if not has_lower_points:
                                 moves.append((src, 25, die))
-                                
-        # Code pour les combinaisons de dés (à ajouter si nécessaire)
         
         moves = list(set(moves))
         moves.sort(key=lambda x: (x[0], x[1], x[2]))

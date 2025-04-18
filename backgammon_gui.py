@@ -1,4 +1,3 @@
-# backgammon_gui.py
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 from itertools import chain

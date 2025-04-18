@@ -38,8 +38,7 @@ class GameStatistics:
             except:
                 print("Impossible de convertir en nombre, utilisation de 0 par défaut")
                 moves_count = 0
-        
-        # Reste du code inchangé
+        # Ajouter une nouvelle ligne au DataFrame
         new_row = pd.DataFrame({
             'date': [pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')],
             'winner': [f"team{team}"],
